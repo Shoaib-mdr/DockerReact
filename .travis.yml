@@ -4,9 +4,9 @@ services:
     - docker
 
 before_install:
-    - docker build -t shoaib-mdr/dockerReact -f Dockerfile.dev .
+    - docker build -t shoaib-mdr/dockerreact -f Dockerfile.dev .
 
 scripts:
-    - docker run Shoaib-mdr/DockerReact npm run test -- --coverage
+    - docker run shoaib-mdr/dockerreact npm run test -- --coverage
 
 
